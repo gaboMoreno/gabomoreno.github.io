@@ -224,7 +224,7 @@ limitations under the License.
         }
         function sendPrinterData() {
           // Print an image followed by the text
-          sendImageData()
+          Promise.resolve(27)
           .then(sendTextData)
           .then(() => {
             progress.hidden = true;
